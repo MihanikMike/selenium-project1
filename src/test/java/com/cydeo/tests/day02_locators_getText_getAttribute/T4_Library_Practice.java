@@ -10,7 +10,7 @@ public class T4_Library_Practice {
 //        1. Open Chrome browser
         WebDriver driver = new ChromeDriver();
 //        2. Go to http://library2.cybertekschool.com/login.html
-        driver.get("https://library2.cybertekschool.com/login.html");
+        driver.get("http://library2.cybertekschool.com/login.html");
 //        3. Enter username: “incorrect@email.com”
         WebElement usernameInputBox = driver.findElement(By.className("form-control"));
         usernameInputBox.sendKeys("incorrect@email.com");
