@@ -32,6 +32,7 @@ public class TC01Practice_page_Login_Test {
         // 7. Expected: "You logged into a secure area!"
         String expectedText = "You logged into a secure area!";
         WebElement containsOnPage = driver.findElement(By.xpath("//div[@id='flash']"));
+
         String actualText = containsOnPage.getText();
         System.out.println(expectedText);
         System.out.println(actualText);

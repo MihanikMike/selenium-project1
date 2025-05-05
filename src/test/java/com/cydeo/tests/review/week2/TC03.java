@@ -31,8 +31,15 @@ public class TC03 {
                 System.out.println("Clicked " + each.getDomAttribute("id"));
             }
         }
+        List<WebElement> allList2 = driver.findElements(By.cssSelector("input[name='color']"));
+
+        for (WebElement each : allList2) {
+            each.click();
+            Thread.sleep(3000);
+            if(each.isSelected()){
+                System.out.println("Clicked " + each.getDomAttribute("id"));
+            }
+        }
         driver.close();
-
-
     }
 }
