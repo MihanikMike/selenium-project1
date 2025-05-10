@@ -10,7 +10,7 @@ public class T4_Library_Practice {
 //        1. Open Chrome browser
         WebDriver driver = new ChromeDriver();
 //        2. Go to http://library2.cybertekschool.com/login.html
-        driver.get("http://library2.cybertekschool.com/login.html");
+        driver.get("https://library2.cydeo.com/login.html");
 //        3. Enter username: “incorrect@email.com”
         WebElement usernameInputBox = driver.findElement(By.className("form-control"));
         usernameInputBox.sendKeys("incorrect@email.com");
@@ -21,8 +21,9 @@ public class T4_Library_Practice {
         passwordInputBox.sendKeys("anything");
 //        5. Verify: visually “Sorry, Wrong Email or Password”
 //        displayed
+//        Locate Sign in button using “tagName” locator
         WebElement signInButton = driver.findElement(By.tagName("button"));
         signInButton.click();
-//        Locate Sign in button using “tagName” locator
+        driver.quit();
     }
 }
