@@ -35,7 +35,6 @@ public class BrowserUtils {
             }
         }
         String actualTitle = driver.getTitle();
-
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
 
     }
